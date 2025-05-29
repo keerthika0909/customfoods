@@ -1,0 +1,109 @@
+/* components/CustomizeDish.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+  padding: 0 1rem;
+}
+
+/* Hero Header */
+.hero {
+  background: linear-gradient(90deg, #fe4f4f 0%, #fe8700 100%);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.hero p {
+  margin-top: 0.5rem;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* Wrapper for all form controls */
+.controls {
+  margin-top: 1.5rem;
+}
+
+/* Row layout */
+.controls .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Fieldsets scoped under .controls */
+.controls fieldset {
+  flex: 1 1 300px;
+  border: none;
+  padding: 0;
+}
+.controls legend {
+  font-weight: bold;
+}
+
+/* Pill-style checkbox labels */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  background: #eee;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+.pill input {
+  margin-right: 0.5rem;
+}
+
+/* Dropdowns scoped under .controls */
+.controls label > select {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+.generate {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.order {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.order:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Recipe output */
+.recipe {
+  background: #f7f7f7;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  white-space: pre-wrap;
+}
